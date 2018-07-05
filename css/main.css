@@ -99,7 +99,6 @@ textarea {
 
 /*Le header*/
 
-
 header .mobile, .basketmobile{
   display: none;
 }
@@ -111,34 +110,43 @@ header{
 }
 
 header nav{
-  width : 25%;
+  width : 30%;
+  display: flex;
 }
 
 header nav a{
   color: black;
-  margin : 2px 0px 10px 10px;
+  height : 25px;
+  width : 60px;
   border-top: none;
-  padding: 2px 15px 15px 15px;
-  border-radius: 2px;
+  border-radius: 5px;
+  margin-left : 10px;
+  font-size: 14px;
+  color : #494444;
+  text-align:center;
 }
 
 header .connect, .connect a{
   color: grey;
   width : 15%;
+  margin: 0;
 }
 
-header .connect{
+header .imagebox{
+  width : 30%;
+  margin: auto;
+}
+
+header .regroup{
+  width : 33%;
   display: flex;
+  margin : 0;
 }
 
-header .imagehead{
-  width : 25%;
-  margin: 0px 5px 5px 400px;
-  float: left;
-}
-
-header .BP{
-  float: right;
+header .regroup .connect{
+  width : 44%;
+  margin-right: 14px;
+  font-size: 14px;
 }
 
 header nav a:hover{
@@ -152,18 +160,256 @@ header .connect a:hover{
   color: black;
 }
 
+/*Partie catégorie*/
 
+.category{
+    margin-top: 10px;
+    border : 1px solid lightgrey;
+    border-left : none;
+    border-right : none;
+    border-top: none;
+    width : 99%;
+}
+.category ul li{
+  list-style-type: none;
+  display: inline;
+  font-family:Georgia,Times,"Times New Roman",serif;
+  font-style: italic;
+  font-size: 18px;
+}
 
+.category ul li a{
+  color : #494444;
+  margin-right: 20px;
+}
 
+.category ul li a:hover{
+  color : lightgrey;
+  text-decoration: none;
+}
 
+/* partie des article */
 
+.articles .container-fluid{
+  margin-top: 30px;
+}
 
+.articles .container-fluid .solde{
+  margin-bottom: 150px;
+  margin-left: 20px;
+}
 
+.articles .container-fluid .row .newcat{
+    flex-direction: row;
+}
+.articles .container-fluid .row .newcat img{
+  width : auto;
+}
 
+.articles .solde .soldemobile ul li{
+  font-family:Georgia,Times,"Times New Roman",serif;
+  list-style-type: none;
+  margin-top: 10px;
+  margin-left: -25px;
+  flex-direction: column;
+}
+.articles .solde img{
+  width : 100%;
+  height : auto;
+}
+.articles .solde .soldemobile .buttonGrey{
+  color : #494444;
+  background-color: lightgrey;
+  font-size: 13px;
+  padding : 5px;
+  border-radius: 7px;
+}
 
+.articles .solde .soldemobile .bigsolde{
+  color : #494444;
+  font-size: 30px;
+}
 
+.articles .solde .soldemobile .buttonblack{
+  color : white;
+  background-color: #444444;
+  font-size: 16px;
+  padding : 12px;
+  border-radius: 7px;
+}
 
+.articles .chaussette .title_article p{
+  font-size: 13px;
+  text-align: center;
+  color : #913035;
+}
 
+.articles .chaussette .title_article span{
+  font-size: 15px;
+  font-family:Georgia,Times,"Times New Roman",serif;
+  margin-left: 30px;
+  box-shadow: -2px 8px 12px;
+}
+
+.articles .chaussette .specificities ul li{
+  list-style-type: none;
+  display: inline;
+  text-align: center;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.articles .chaussette .specificities ul{
+margin-left: 30px;
+}
+
+/*Toutes les infos*/
+
+.allinfo .firstinfo{
+  border : 1px solid lightgrey;
+  border-left : none;
+  border-right: none;
+  border-bottom: none;
+  padding-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.allinfo .firstinfo h1{
+  font-size: 30px;
+  text-align: center;
+  font-family:Georgia,Times,"Times New Roman",serif;
+}
+
+.allinfo .firstinfo p{
+  font-size: 15px;
+  font-family:Georgia,Times,"Times New Roman",serif;
+  color: grey;
+}
+
+.allinfo .firstinfo span{
+  font-size: 16px;
+  font-family:Georgia,Times,"Times New Roman",serif;
+  color: #777777;
+  font-weight: bold;
+}
+
+.allinfo .firstinfo a{
+  font-size: 16px;
+  font-family:Georgia,Times,"Times New Roman",serif;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+.allinfo .regroupinfo{
+  margin : 0px 25px 0px 15px;
+  display: flex;
+}
+
+.allinfo .size{
+  margin-right: 15px;
+}
+
+.allinfo .collabo{
+  margin-right: 15px;
+}
+.allinfo .size h1{
+  font-size: 25px;
+  font-family:Georgia,Times,"Times New Roman",serif;
+}
+
+.allinfo .size p{
+  font-size: 17px;
+  font-family:Georgia,Times,"Times New Roman",serif;
+  color: grey;
+}
+
+.allinfo .collabo h1{
+  font-size: 25px;
+  font-family:Georgia,Times,"Times New Roman",serif;
+}
+
+.allinfo .collabo p{
+  font-size: 17px;
+  font-family:Georgia,Times,"Times New Roman",serif;
+  color: grey;
+}
+.allinfo .madein h1{
+  font-size: 25px;
+  font-family:Georgia,Times,"Times New Roman",serif;
+}
+
+.allinfo .madein p{
+  font-size: 17px;
+  font-family:Georgia,Times,"Times New Roman",serif;
+  color: grey;
+}
+
+/*Les icones*/
+
+.icone img{
+  width : 24%;
+}
+
+footer{
+  display: flex;
+  font-family:Georgia,Times,"Times New Roman",serif;
+  background-color: #f5f5f5;
+  padding-bottom: 80px;
+}
+
+footer .archifooter, .collectionfooter, .informationsfooter, .followfooter{
+  margin-left: 20px;
+}
+footer .archifooter ul li{
+  list-style-type: none;
+  color : grey;
+}
+footer .archifooter h1{
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+footer .collectionfooter ul li{
+  list-style-type: none;
+  color : grey;
+}
+
+footer .collectionfooter h1{
+    margin-top: 30px;
+  font-size: 30px;
+}
+
+footer .informationsfooter ul li{
+  list-style-type: none;
+  color : grey;
+}
+
+footer .informationsfooter h1{
+  margin-top: 30px;
+  font-size: 30px;
+}
+footer .followfooter p{
+  font-size: 15px;
+  color : grey;
+}
+
+footer .followfooter h1{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+footer .followfooter input{
+  margin-bottom: 20px;
+}
+footer .followfooter p a i{
+  color : grey;
+  border : 1px solid grey;
+  padding : 10px;
+  border-radius: 5px;
+  background-color: lightgrey;
+  margin-right: 20px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
