@@ -199,9 +199,6 @@ header .connect a:hover{
   margin-left: 20px;
 }
 
-.articles .container-fluid .row{
-
-}
 .articles .container-fluid .row .newcat img{
   width : 180%;
 }
@@ -279,6 +276,11 @@ margin-left: 15px;
 width : 100%;
 }
 
+.articles .newcat .chaussette .background img{
+  width : 170%;
+  align-items: center;
+}
+
 /*Partie basse articles*/
 
 .row{
@@ -326,8 +328,10 @@ width : 100%;
 
 .articles .background{
   background-image: url("https://media.archiduchesse.com/3625-home_default/chaussettes-rose-framboise.jpg");
-  width : 92%;
+  background-size: cover;
+  width : 100%;
 }
+
 
 .articles a img:hover{
   opacity: 0;
@@ -483,14 +487,97 @@ footer .followfooter p a i{
 
 /*PAGE: BLOG*/
 
-.RP .RP_Category{
-  margin: auto;
-  width: 25%;
-    font-family:Georgia,Times,"Times New Roman",serif;
+.BP {
+  display: flex;
+  flex-direction:row-reverse ;
+  width : 100%;
+  font-family:Georgia,Times,"Times New Roman",serif;
 }
 
-..RP .RP_Category
-/* ==========================================================================
+.RP {
+  width :30%;
+}
+.RP h1{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left : 40px;
+}
+
+.RP h2{
+  font-size: 13px;
+  font-style: italic;
+  color: #9999af;
+  margin-left : 40px;
+}
+
+.RP ul{
+  list-style-type: none;
+}
+
+.RP a{
+  color : #5b444f;
+  font-size: 13px;
+}
+
+.RP img{
+  width : 30px;
+  position: absolute;
+  margin-top: 20px;
+}
+
+.RP .menu{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/*Page CENTRALE*/
+
+  .CP{
+    width : 100%;
+    margin : 20px 0px 0px 20px;
+  }
+  .CP .head_central{
+    font-family:Georgia,Times,"Times New Roman",serif;
+  }
+
+  .CP .head_central .collab a{
+    background-color: lightgrey;
+    padding : 5px 5px 5px 5px;
+    font-size: 13px;
+    border-radius: 2px;
+  }
+  .CP .head_central a{
+    color : #847777;
+  }
+
+  .CP .head_central  h1{
+    color: #444444;
+  }
+
+  .CP .head_central p{
+    color : #9f9999;
+  }
+  .CP .head_central span{
+    color : #444444;
+  }
+
+  .CP .regroup_ti .img_regroup img{
+    width : 300px;
+  }
+.CP .text_central{
+  font-family:Georgia,Times,"Times New Roman",serif;
+  font-size: 15px;
+}
+
+.CP .text_central .regroup_ti{
+  display: flex;
+  flex-direction: row-reverse;
+  float: left;
+  text-align: right;
+}
+=====================================================================
    Helper classes
    ========================================================================== */
 
@@ -576,10 +663,196 @@ footer .followfooter p a i{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 780px) {
+
+    header{
+      display: flex;
+    }
+
+    header nav a{
+      display: none;
+    }
+
+    header .mobile{
+      display: flex;
+      flex-direction: row;
+      width : 250px;
+      margin: 20px 80px 0px 0px;
+    }
+
+    header .mobile a, i{
+      display: flex;
+      display: block;
+    }
+
+    header .regroup .connect p{
+      display : none;
+    }
+
+    header .BP .boutiques{
+      display: none;
+    }
+
+    header .BP img{
+      width : 80px;
+    }
+
+    header .imagebox .imagehead img{
+      width : 180px;
+      position: relative;
+      margin-left: -100px;
+    }
+
+    .category{
+      display: none;
+    }
+
+
+    .articles .container-fluid .row .newcat .chaussette{
+      width : 40%;
+      margin-left: 20px;
+    }
+
+    .articles .container-fluid .row .newcat .chaussette img{
+      width : 150%;
+
+      /* margin-left: 30px; */
+    }
+
+
+    .articles .container-fluid .row .newcat .chaussette .title_article{
+      width : 160%;
+    }
+
+    .articles .container-fluid .row .newcat .chaussette .title_article span{
+      font-size: 15px;
+      margin-left: 35px;
+    }
+
+    .articles .background{
+      width : 100%;
+      background-image: url("https://media.archiduchesse.com/3625-home_default/chaussettes-rose-framboise.jpg");
+      background-size:cover;
+      background-repeat: no-repeat;
+    }
+
+    /* 2eme PARTIE ARTICLES */
+
+    .articles .container-fluid .row .chaussettes{
+      width : 40%;
+      margin-left: 20px;
+    }
+
+    .articles .container-fluid .row  .chaussettes img{
+      width : 150%;
+    }
+
+
+    .articles .container-fluid .row .chaussettes .title_article{
+      width : 160%;
+    }
+
+    .articles .container-fluid .row .chaussettes .title_article span{
+      font-size: 15px;
+      margin-left: 35px;
+    }
+
+    .articles .background{
+      width : 100%;
+      background-image: url("https://media.archiduchesse.com/3625-home_default/chaussettes-rose-framboise.jpg");
+      background-size:cover;
+      background-repeat: no-repeat;
+    }
+
+    /* PARTIE INFO*/
+
+    .regroupinfo{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .icone img{
+      width : 45%;
+      margin-bottom: 15px;
+    }
+
+    footer .archifooter, .collectionfooter, .informationsfooter, .followfooter{
+      display: none;
+    }
+
+    /*PAGE BLOG*/
+
+    .RP{
+      display : none;
+    }
+
+    .CP .img_central img{
+      width : 100%;
+    }
+
+    .CP .regroup_ti .img_regroup img{
+      width : 200px;
+      margin-left: 60px;
+    }
+
+    .CP .text_central .regroup_ti{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
 }
 
+@media only screen and (min-width: 780px) and (max-width: 1000px){
+  header{
+    display: flex;
+  }
+
+  header nav a{
+    display: none;
+  }
+
+  header .mobile{
+    display: flex;
+    flex-direction: row;
+    width : 250px;
+    margin: 20px 80px 0px 0px;
+  }
+
+  header .mobile a, i{
+    display: flex;
+    display: block;
+  }
+
+  header .regroup .connect p{
+    display : none;
+  }
+
+  header .BP .boutiques{
+    display: none;
+  }
+
+  header .BP img{
+    width : 80px;
+  }
+
+  header .imagebox .imagehead img{
+    width : 180px;
+    position: relative;
+    margin-left: -100px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1000px) and (max-width : 1140px){
+    footer .followfooter .email input{
+    width: 70px;
+  }
+
+}
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
